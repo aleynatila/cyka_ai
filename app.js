@@ -37,13 +37,14 @@ console.log(__dirname);
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+/*
 db.connect((error) => {
     if (error) {
         console.log(error);
     } else {
         console.log("MySQL connected...");
     }
-});
+});*/
 
 // Define routes
 app.use('/', require('./routes/pages'));
